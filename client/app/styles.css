@@ -1,0 +1,126 @@
+body{
+    background-color: #eaebed;
+}
+
+
+.navbar {
+    background-image: url('http://www.thevectorart.com/wp-content/uploads/2011/05/Abstract-Colorful-Background-Artwork.jpg');
+    background-color: #9DF8FF;
+    background-size: inherit;
+    font-size: 18px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+} 
+
+li {
+    float: left;
+}
+img {
+    float: left;
+}
+
+a {
+    display: block;
+    color: #D98433;
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none !important;
+}
+.move-down{
+    margin-bottom: -10px;
+}
+
+#chirpWidget {
+    height: 135px;
+    width: 400px;
+    text-align: right;
+    float: right;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -70px;
+}
+
+#chirpForm {
+    height: 175px;
+    width: inherit;
+    border: 2px solid #acf7c1;
+    background-color: #acf7c1;
+}
+
+.primary-text {
+    font-family: 'Indie Flower', cursive;
+}
+.secondary-text {
+    font-family: 'Raleway', sans-serif;
+}
+/*Home Page  */
+.landing{
+
+    background-image: url("https://images5.alphacoders.com/308/308020.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: 0.5;
+    height: 500px;
+    width: 100%;
+}
+.landing-text{
+    display: block;
+    color: black;
+    opacity: 1;
+    
+}
+
+.delete{
+    float: right;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*List Page  */
+#list-page {
+    margin: 6em;
+}
+
+.list-container {
+    height: 145px;
+    max-width: 500px;
+    border: 2px solid #CC1378;
+    background-color: #CC1378;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.inner-container {
+    border-radius: 12px;
+    margin: 4px;
+    background-color: whitesmoke;
+}
+
+#list-heading {
+    height: 6em;
+    width: 20em;
+}
+
+.box-shadow{
+-webkit-box-shadow: 33px 26px 40px 0px rgba(133,124,141,1);
+-moz-box-shadow: 33px 26px 40px 0px rgba(133,124,141,1);
+box-shadow: 33px 26px 40px 0px rgba(133,124,141,1);
+}
+
+.title-font{
+    color: #4CF3FF;
+}

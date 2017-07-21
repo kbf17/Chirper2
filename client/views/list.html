@@ -1,0 +1,20 @@
+<div id="list-page" class="secondary-text">
+    <div class = "center col-xl-4 title-font" id="list-heading">
+        <h1 class="primary-text">What the Chirp?!</h1>
+        <h4>What Other Users Are Saying</h4>
+    </div>
+
+    <div class = "col-xl-3" ng-controller="ChirpsController as chirps">
+        <div class = "center col-xl-3 list-container box-shadow secondary-text" ng-repeat="chirp in chirpList">
+            <div class = "inner-container">
+                <p>User: {{ chirp.user }}</p>
+                <p>Chirp: {{ chirp.message }}</p>
+                <button ng-click="ClickMe(chirp.id)" class = "btn btn-default">View</button>
+                <div class = "delete">
+                    <button class = "btn btn-default" ng-click="DeleteChirp(chirp.id)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
