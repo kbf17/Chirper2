@@ -1,10 +1,11 @@
 body{
     background-color: #eaebed;
+  
 }
 
 
 .navbar {
-    background-image: url('http://www.thevectorart.com/wp-content/uploads/2011/05/Abstract-Colorful-Background-Artwork.jpg');
+    background-image: url("../assets/SimpleVine.png");
     background-color: #9DF8FF;
     background-size: inherit;
     font-size: 18px;
@@ -56,15 +57,15 @@ a:hover{
 }
 
 .primary-text {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Amatic SC', cursive;
 }
 .secondary-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Slab', serif;
 }
 /*Home Page  */
 .landing{
 
-    background-image: url("https://images5.alphacoders.com/308/308020.jpg");
+    background-image: url("http://farm3.staticflickr.com/2007/13171439044_1196603225_k.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -96,8 +97,8 @@ a:hover{
 .list-container {
     height: 145px;
     max-width: 500px;
-    border: 2px solid #CC1378;
-    background-color: #CC1378;
+    border: 1px solid #CC1378;
+        background-image: url("../assets/SimpleVine1.png");
     border-radius: 12px;
     margin-bottom: 10px;
     padding: 10px;
