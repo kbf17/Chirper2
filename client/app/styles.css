@@ -39,6 +39,13 @@ a:hover{
     margin-bottom: -10px;
 }
 
+/* sidebar */
+#sidebar {
+    width: 12em;
+    display: inline-block;
+    border: 2px solid black;
+}
+
 #chirpWidget {
     height: 135px;
     width: 400px;
@@ -65,7 +72,7 @@ a:hover{
 /*Home Page  */
 .landing{
 
-    background-image: url("http://farm3.staticflickr.com/2007/13171439044_1196603225_k.jpg");
+    background-image: url("../assets/rainbowbridge.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -124,4 +131,25 @@ box-shadow: 33px 26px 40px 0px rgba(133,124,141,1);
 
 .title-font{
     color: #4CF3FF;
+}
+/* speech bubble */
+.speech-bubble {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 1.375em solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -0.687em;
+	margin-left: -1.375em;
 }

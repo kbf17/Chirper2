@@ -1,0 +1,12 @@
+<div ng-controller="OneUserController">
+    <h1 class="center">{{userChirps.user}} Profile</h1>
+    <button ng-click="DeleteHistory(user)">DELETE USER HISTORY</button>
+    <div class="list-container center" ng-repeat="chirp in userChirps">
+        <img src={{chirp.imgURL}} class="profile-pics img-circle">
+        <div class="speech-bubble">
+            <p> {{chirp.message}} </p>
+            <span> {{chirp.date | date : 'M/d/yy h:mm a'}} </span>
+            <button ng-click="DeleteChirp(chirp.id)">Delete this Chirp</button>
+        </div>
+    </div>
+</div>

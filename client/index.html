@@ -21,7 +21,18 @@
         </div>
           <div class="navbar-text move-down"> <a href="#/list">Latest</a></div>
       </div>
-    </nav>  
+    </nav>
+      <!-- SideBar -->
+      <div ng-controller="UserController" id="sidebar">
+        <div class="users secondary-text">
+          <a data-toggle="collapse" data-target="#listUsers">Users</a>
+          <ul id="listUsers" class="list-group">
+            <li ng-repeat="user in userList" ng-click="UserPage(user)" class="collapse list-group-item">
+              {{ user }}
+            </li>
+          </ul>
+        </div>
+      </div>
     <!-- Chirp Widget   -->
     <div id="chirpWidget" data-ng-controller="PushController">
       <button data-toggle="collapse" data-target="#chirpForm" class="btn btn-default">Wanna Chirp About It?</button>
@@ -34,6 +45,8 @@
           <div class="form-group">
             <label for="chirp-input">Chirp It!</label>
             <input type="text" class="form-control" row="3" id="chirp-input" placeholder="Share your thoughts" ng-model="message" required></input>
+             <label for="imgURL">Custom User Pic (url only)</label> 
+            <input type="url" class="form-control" ng-model="imgURL"></input>
             <button class="btn btn-default" ng-click="SendChirp()">Chirp</button>
           </div>
         </form>

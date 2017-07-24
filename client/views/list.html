@@ -9,6 +9,7 @@
             <div class = "inner-container">
                 <p>User: {{ chirp.user }}</p>
                 <p>Chirp: {{ chirp.message }}</p>
+                <p> {{chirp.date | date : 'M/d/yy h:mm a'}} </p>
                 <button ng-click="ClickMe(chirp.id)" class = "btn btn-default">View</button>
                 <div class = "delete">
                     <button class = "btn btn-default" ng-click="DeleteChirp(chirp.id)">Delete</button>
