@@ -1,13 +1,14 @@
 <div>
-    <h3> You made it</h3>
-
-<div class = "col-lg-4" ng-controller="SingleController">
-    <div class = "center col-lg-4 list-container">
-        <p>User: {{ chirps.user }}</p>
-        <p>Chirp: {{ chirps.message }}</p>
-        <button>Delete</button>
-        {{ chirp.id }}
+    <h2 class="center primary-text landing-text">A single chirp is worth...a single chirp</h2>
+    <div class = "col-xl-4" ng-controller="SingleController">
+        <div class = "center col-xl-3 list-container speech-bubble box-shadow secondary-text">
+            <div class="inner-container">
+                <p>User: {{ chirps.user }}</p>
+                <p>Chirp: {{ chirps.message }}</p>
+                <p>Posted: {{chirps.date | date : 'M/d/yy h:mm a'}} </p>
+                <button class="btn btn-default">Delete</button>
+            </div>
+        </div>
     </div>
-</div>
 
 </div>

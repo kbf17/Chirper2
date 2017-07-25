@@ -11,47 +11,49 @@
   </head>
   <body>
     <!--Navbar  -->
-     <nav class="navbar fixed-top navbar-light bg-faded primary-text">
-      <div>
-        <div class="navbar-brand">
-          <a href="#/">
-            <img src="https://risdhillon.github.io/chirpv6/images/Chirplogo.png" width="40" height="40" class="d-inline-block align-top" alt="">
-            <span class="navbar-text primary-text">Chirper</span>
+    <nav class="navbar fixed-top navbar-light bg-faded primary-text">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/home">
+            <img src="../assets/birdy.svg" width="50" height="50" class="align-top" alt="">
           </a>
         </div>
-          <div class="navbar-text move-down"> <a href="#/list">Latest</a></div>
+        <ul class="nav navbar-nav">
+          <li><a href="#/home">Chirper</a></li>
+           <li><a href="#/list">Latest</a></li>
       </div>
     </nav>
       <!-- SideBar -->
-      <div ng-controller="UserController" id="sidebar">
+      <div ng-controller="UserController" id="sidebar" ng-hide="hideIt">
         <div class="users secondary-text">
-          <a data-toggle="collapse" data-target="#listUsers">Users</a>
+          <a data-toggle="collapse" data-target="#listUsers"><h3 class="center">Users</h3></a>
           <ul id="listUsers" class="list-group">
             <li ng-repeat="user in userList" ng-click="UserPage(user)" class="collapse list-group-item">
               {{ user }}
             </li>
           </ul>
         </div>
-      </div>
-    <!-- Chirp Widget   -->
-    <div id="chirpWidget" data-ng-controller="PushController">
-      <button data-toggle="collapse" data-target="#chirpForm" class="btn btn-default">Wanna Chirp About It?</button>
-      <div id="chirpForm" class="collapse">
-        <form>
-          <div class="form-group">
-            <label for="name-input">Name</label>
-            <input type="text" class="form-control" id="name-input" ng-model="user" required></input>
+              <!-- Chirp Widget   -->
+        <div id="chirpWidget" data-ng-controller="PushController">
+          <button data-toggle="collapse" data-target="#chirpForm" class="btn btn-default secondary-text">Wanna Chirp About It?</button>
+          <div id="chirpForm" class="collapse secondary-text">
+            <form>
+              <div class="form-group">
+                <label for="name-input">Name</label>
+                <input type="text" class="form-control" id="name-input" ng-model="user" required></input>
+              </div>
+              <div class="form-group">
+                <label for="chirp-input">Chirp It!</label>
+                <input type="text" class="form-control" row="3" id="chirp-input" placeholder="Share your thoughts" ng-model="message" required></input>
+                <label for="imgURL">Custom User Pic (url only)</label> 
+                <input type="url" class="form-control" ng-model="imgURL" id="img-input"></input>
+                <button class="btn btn-default" ng-click="SendChirp()">Chirp</button>
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="chirp-input">Chirp It!</label>
-            <input type="text" class="form-control" row="3" id="chirp-input" placeholder="Share your thoughts" ng-model="message" required></input>
-             <label for="imgURL">Custom User Pic (url only)</label> 
-            <input type="url" class="form-control" ng-model="imgURL"></input>
-            <button class="btn btn-default" ng-click="SendChirp()">Chirp</button>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
+
     <!--Angular Controllers load  -->
     <div ng-view></div>
 
