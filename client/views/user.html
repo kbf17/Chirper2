@@ -1,6 +1,6 @@
 <div ng-controller="OneUserController">
     <h1 class="center">{{user}} Profile</h1>
-    <button ng-click="DeleteHistory(user)">DELETE USER HISTORY</button>
+    <button ng-click="DeleteHistory(user)" class="delete">DELETE USER HISTORY</button>
     <div class="list-container center speech-bubble" ng-repeat="chirp in userChirps">
         <img src={{chirp.imgURL}} class="profile-pics img-circle">
             <div class="inner-container">

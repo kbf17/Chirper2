@@ -110,6 +110,9 @@ app.controller('OneUserController', ['$scope', '$routeParams', '$http', '$rootSc
         console.log(response);
         console.log(response.data);
         $scope.userChirps = response.data;
+        if($scope.imgURL == null){
+            imgURL = ('http://www.clipartqueen.com/image-files/small-bird-silhouette-black.png');
+        }
     });
     $scope.DeleteChirp = function(id){
     console.log('click');
